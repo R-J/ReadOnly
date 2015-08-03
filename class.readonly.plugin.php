@@ -3,7 +3,7 @@
 $PluginInfo['ReadOnly'] = array(
     'Name' => 'Read Only',
     'Description' => 'Let\'s you temporarely restrict some permissions.',
-    'Version' => '0.1',
+    'Version' => '0.2',
     'RequiredApplications' => array('Vanilla' => '>= 2.1'),
     'RequiredTheme' => false,
     'SettingsPermission' => array('Garden.Settings.Manage'),
@@ -55,7 +55,7 @@ class ReadOnlyPlugin extends Gdn_Plugin {
         if ($message) {
             Gdn::sql()->put(
                 'Message',
-                array('Enable' => false),
+                array('Enabled' => false),
                 array('MessageID' => $messageID)
             );
             $sender->informMessage(
