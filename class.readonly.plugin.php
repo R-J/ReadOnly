@@ -2,8 +2,8 @@
 
 $PluginInfo['ReadOnly'] = array(
     'Name' => 'Read Only',
-    'Description' => 'Let\'s you temporarely restrict some permissions.',
-    'Version' => '0.3',
+    'Description' => 'Lets you temporarily restrict some permissions.',
+    'Version' => '0.3.1',
     'RequiredApplications' => array('Vanilla' => '>= 2.1'),
     'RequiredTheme' => false,
     'SettingsPermission' => array('Garden.Settings.Manage'),
